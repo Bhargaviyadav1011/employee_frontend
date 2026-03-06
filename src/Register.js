@@ -12,7 +12,7 @@ function Register() {
     e.preventDefault();
     setMessage('');
     try {
-      const res = await fetch('http://localhost:8084/api/users/register', {
+      const res = await fetch('https://employeemanagementbackend-1-aqr6.onrender.com/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)
