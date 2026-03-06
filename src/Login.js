@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
     setError('');
     try {
-      const res = await fetch('http://localhost:8084/api/users/login', {
+      const res = await fetch('https://employeemanagementbackend-1-aqr6.onrender.com/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)
