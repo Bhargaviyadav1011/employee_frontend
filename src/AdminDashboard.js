@@ -7,7 +7,7 @@ function AdminDashboard() {
 
   useEffect(() => {
     // Attempting to fetch all users via the correct backend endpoint
-    fetch('http://localhost:8084/api/users/all')
+    fetch('https://employeemanagementbackend-1-aqr6.onrender.com/api/users/all')
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch users. You may need Administrator privileges or a valid session.');
         return res.json();
